@@ -429,7 +429,7 @@ html {
   height: 600px;
 }
 .slideBig .myslide .background .slide1 {
-  background-image: url(../image/site1.JPG);
+  background-image: url(../assets/image/site1.JPG);
 
   height: 100%;
   background-size: cover;
@@ -455,7 +455,7 @@ html {
 }
 
 .content h1,
-p {
+.button1 {
   font-family: segoe ui light;
   font-weight: 1000;
   color: white;
@@ -495,7 +495,7 @@ p {
 }
 
 .slideBig .myslide .background .slide2 {
-  background-image: url(../image/slide2.JPG);
+  background-image: url(../assets/image/slide2.JPG);
   height: 100%;
   background-size: cover;
   background-position: center center;
@@ -700,12 +700,12 @@ section .first {
   margin-top: 3rem;
 }
 
-section .desti {
+.desti {
   width: 100%;
 
   margin: auto;
 }
-section .desti h3 {
+.desti h3 {
   text-align: center;
   padding-top: 3rem;
 
@@ -714,7 +714,7 @@ section .desti h3 {
   font-weight: 900;
   color: #2e2c2c;
 }
-section .desti p {
+.desti p {
   color: #464343;
   font-family: segoe ui light;
   font-weight: 1000;
@@ -723,7 +723,7 @@ section .desti p {
   font-size: 1rem;
 }
 
-.gWhite .overSection2 {
+.overSection2 {
   margin-top: 50px;
   padding-left: 3rem;
 }
