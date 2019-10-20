@@ -1,3 +1,429 @@
+/* start css by kienz */
+*{margin: 0; padding: 0}
+body,html{margin: 0; height: 100%; width: 100%; overflow-x: hidden;position: relative;z-index: 0;}
+
+.container-fluid.header{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header .row{
+  width: 100%;
+}
+
+.slideBig{
+  width: 102.275%;
+  height: 650px;
+  margin: auto;
+  position: relative;
+}
+
+.slideBig .myslide{
+  width: 100%;
+  margin: auto;
+}
+
+.slideBig .myslide .background{
+  width: 100%;
+  height: 650px;
+}
+
+.slideBig .myslide .background .slide1{
+  background-image: url(../image/travel2-slide1.JPG);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+
+  position: relative;
+}
+.slideBig .myslide .background .slide1::before,
+.slideBig .myslide .background .slide2::before,
+.slideBig .myslide .background .slide3::before,
+.slideBig .myslide .background .slide4::before{
+  content: "";
+  position: absolute;
+ 
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.3);
+}
+.slideBig .myslide .background .slide2{
+  background-image: url(../image/travel2-slide2.JPG);
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.slideBig .myslide .background .slide3{
+  background-image: url(../image/travel2-slide3.JPG);
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.slideBig .myslide .background .slide4{
+  background-image: url(../image/travel2-slide4.JPG);
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.slideBig .myslide .background .one{
+  width: 100%;
+  position: absolute;
+  top: 45%;
+}
+.slideBig .myslide .background .content{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  
+  font-family: segoe ui light
+}
+.slideBig .myslide .background .content h6{
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+}
+.slideBig .myslide .background .content h3{
+  font-size: 45px;
+  color: white;
+}
+
+
+.menuTop{
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 8%;
+  left: -4%;
+}
+.menuTop > ul{
+  display: flex;
+    width: 1140px;
+    /* margin: auto; */
+    margin-top: -3%;
+    margin-left: 50%;
+    list-style: none;
+}
+.menuTop  .tour{
+  font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: WHITE;
+    width: 10%;
+    /* padding-right: 42%; */
+    margin-left: 10%;
+}
+.menuTop .tour a{
+  color: white;
+  padding-left: 30px;
+  text-decoration: none;
+}
+.menuTop > ul > li{
+  margin-right: 50px;
+}
+.menuTop > ul > li .item{
+  width: 100%;
+  
+  position: relative;
+}
+.menuTop > ul > li .item a.layer1{
+  color: white;
+  font-size: 20px;
+  font-family: segoe ui;
+  text-decoration: none;
+}
+.menuTop > ul > li .item a.layer1:hover{
+  color: #fd0;
+}
+.menuTop > ul > li .item .layer2{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100px;left: 0;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+.menuTop > ul > li .item .layer2:after{
+  content: "";
+  position: absolute;
+  top: -19px;
+  left: 10px;
+  border-radius: 3px;
+    /* width: 16px; */
+  border: 10px solid transparent;
+  border-bottom-color: #000;
+}
+.item .layer2 > ul{
+  background-color: #000;
+  width: 150px;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 25px;
+  padding-left: 18px;
+ 
+  list-style: none;
+}
+
+.item .layer2 > ul > li a{
+  text-decoration: none;
+  color:#b1aaaa;
+  font-family: segoe ui;
+}
+
+.menuTop > ul > li .item:hover .layer2{
+  visibility: visible;
+  opacity: 1;
+  top: 50px;
+}
+
+.item .layer2 > ul > li:hover a{
+  color: white;
+}
+
+a.carousel-control-prev, a.carousel-control-next{
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+
+.container.itemList{
+  visibility: hidden;
+  opacity: 0;
+
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 50px;
+  right: 10%;
+}
+.container.itemList .iconList{
+  width: 33px;
+  height: 33px;
+  position: relative;
+}
+.container.itemList .iconList img{
+  width: 33px;
+  height: 33px;
+}
+
+.itemList .iconList .icon1{
+  position: absolute;
+  top: 0;left: 0;
+
+  
+}
+.itemList .iconList #icon2{
+  position: absolute;
+  top: 0;left: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  
+}
+
+.hiddenIcon1{
+  transition: 0.4s;
+  visibility: hidden;
+  opacity: 0;
+}
+.showIcon2{
+  transition: 0.4s;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+@media (max-width:1200px){
+  .slideBig{
+    width: 110.275%;
+  }
+
+  .menuTop > ul{
+    margin-left: 30%;
+  }
+}
+@media (max-width: 991.98px) {
+  
+  .menuTop > ul{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+  }
+
+  .showul{
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-left: 55% !important;
+
+  }
+
+  .slideBig{
+    position: relative;
+  }
+  
+ .container.itemList{
+   position: absolute;
+   z-index: 2;
+    visibility: visible;
+    opacity: 1;
+  } 
+
+  .menuTop > ul{
+    position: absolute;
+    z-index: 2;
+    display: block;
+    margin-left: 110%;
+    background-color: #00000094;
+    padding-top: 10%;
+    margin-top: -4rem;
+    line-height: 3rem;
+  }
+  .menuTop > ul > li .item a.layer1{
+    font-size: 16px;
+    padding: 0px 10px;
+  }
+  .menuTop > ul > li .item .layer2{
+    position: absolute;
+    z-index: 3;
+  }
+}
+
+
+/* ---------------------------------------------------end slide-header*/
+/* video start */
+
+section .container-fluid.videoContain{
+  width: 100%;
+  height: 450px;
+  padding: 0 0;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.videoContain .first{
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+.videoContain .first .below{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;left: 0;
+
+  background-image: url(../image/mountain.JPG);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+
+}
+.videoContain .first .below::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0000008f;
+}
+
+
+.videoContain .first .below .iconPlay{
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: 0.4s;
+}
+.videoContain .first .below .iconPlay:hover{
+  
+  transform: scale(1.2) translateX(-40%) translateY(-40%);
+  
+}
+
+
+
+.first .container.maldives{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 10%;
+  left: 20%;
+
+  visibility: hidden;
+  opacity: 0;
+}
+.first .container.maldives .row.mal{
+  width: 100%;
+  height: 100%;
+}
+
+.first .container.maldives .video{
+  width: 74.1%;
+  height: 100%;
+  z-index: 5;
+
+  
+  transition: 0.4s;
+}
+
+.showVideo{
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 5;
+}
+
+
+.demoBody{
+  content: "";
+  
+  z-index: 1;
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;
+  height: 500%;
+
+  visibility: hidden;
+  opacity: 0;
+  background-color: transparent;
+}
+
+.showBody{
+  z-index: 1;
+  background-color: #0000008f;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+@media (max-width : 576px){
+  .videoContain .first  .container-fluid.vd{
+      padding-right: 3%;
+      padding-top: 60%;
+  }
+
+  .first .container.maldives .video{
+    width: 100%;
+    height: 60%;
+  }
+  .first .container.maldives{
+    left: 3%;
+    top: 20%;
+  }
+ 
+}
+
+/* end video */
+/* end css by kienz */
+
+
 .text-align {
     text-align: center;
 }
